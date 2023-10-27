@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 19px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* ================================================================== */
+.menu-links{
+    display: flex;
+    justify-content: center;
+
+    margin-left: 15px;
+}
+.menu-links li{
+    margin: 10px;
+    font-size: 20px;
+    list-style-type: none;
+    
+}
+.menu-links li a{
+    text-decoration: none;
+    color: maroon;
+    font-style: oblique;
+}
+.menu-links img{
+    width: 110px;
+    margin-right: 540px;
+}
+.drop-down{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px 5px black;
+    border-radius: 10px;
+    display: none;
+}
+
+.menu-links li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.services:hover .drop-down{
+    display: block;
+}
+.service1:hover .drop-down1{
+    display: block;
+}
+.drop-down1{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px 5px black;
+    border-radius: 10px;
+    display: none;
+}
+/* =====end of navbar===================== */
+
+
+.landing{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.landing div img{
+    width: 450px;
+    padding-top: 100px;
+}
+.landing img{
+    position: absolute;
+    z-index: -1;    
+}
+.intro{
+    font-size: 25px;
+}
+.intro1{
+    font-size: 35px;
+}
+.intro2{
+    font-size: 30px;
+}
+.introo{
+    padding-top: 100px;
+    
+}
+.introo img{
+    position: absolute;
+    z-index: -5;
+}
+.intro3 button{
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+    border: 2px solid hsl(0, 0%, 4%);
+    color: #0e0e65;
+    border-radius: 1000px;
+
+}
+.intro3 button:hover{
+    background-color: white;
+    color: hsl(0, 78%, 32%);
+}
+
+
+/* ============================ */
+
+.silde{
+
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin-top: 140px;
+    margin-left: 200px;
+    
+}
+.picture{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.picture input{
+    display: none;
+}
+.picture img{
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-bottom: solid black 3px;
+    border-top: solid black 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover{
+    background-color: brown;
+}
+#img1:checked~.m1{
+    margin-left: 0%;
+}
+#img2:checked~.m2{
+    margin-left: -100%;
+}
+#img3:checked~.m3{
+    margin-left: -200%;
+}
+
+
+
+/* =========================================================================================== */
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    background-color: #9c1111;
+}
+.content-name img{
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar-name a{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.data3{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.data4{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/* ============================================================ */
+.content1 a pre{
+    width: 80px;
+    padding: 10px;
+    margin-left: 850px;
+    margin-top: 50px;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: maroon 5px;
+}
+.content2 a pre{
+    width: 700px;
+    padding: 10px;
+    margin-left: 550px;
+    margin-top: 50px;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: maroon 5px;
+}
+
+.main{
+    
+    background-color: bisque;
+    padding: 20px 0px 30px 0px;
+}
+.content2 a pre:hover{
+    scale: 1.009;
+}
+.content1 a pre:hover{
+    scale: 1.1;
+}
