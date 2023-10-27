@@ -1,528 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trito</title>
-      <!-- ========================================== -->
-      <style>
-
-#anim1{
-        width: 1px;
-        height: 100px;
-        background-color: white;
-        box-shadow: 5px white;
-        animation-name: div1;
-        animation-duration: 3s;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-      }
-      #anim2{
-        width: 1px;
-        height: 100px;
-        background-color: white;
-        box-shadow: 5px white;
-        animation-name: div2;
-        animation-duration: 3s;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes div1 {
-        0%{
-            height: 100px;
-            scale: 1;
-            margin-left: 0%;
-        
-        }
-        50%{
-            height: 180px;
-            scale: 2;
-            margin-left: 0%;
-            
-        }
-        100%{
-            height: 250px;
-            scale: 2.5;
-            margin-left: 100px;
-        }
-        
-        }
-
-        @keyframes div2 {
-        0%{
-            height: 100px;
-            scale: 1;
-            margin-right: 0%;
-        
-        }
-        50%{
-            height: 180px;
-            scale: 2;
-            margin-right: 0%;
-        }
-        100%{
-            height: 250px;
-            scale: 2.5;
-            margin-right: 100px;
-        }
-
-    }
-      #anim{
-        display: flex;
-        justify-content: center;
-        margin-top: 15%;
-        background-color: black;
-        width: 100%;
-        
-
-      }
-      body{
-        background-color: black;
-      }
-
-
-        #show{
-            display: none;
-        }
-        #me1:checked~#show{
-            display: block;
-        }
-        #faq1 div{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-        }
-        #show{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-         margin-top: 10px;
-        }
-        /* show1 */
-        #show2{
-            display: none;
-        }
-        #me2:checked~#show2{
-            display: block;
-        }
-        #faq2 div{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-        }
-        #show2{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-         margin-top: 10px;
-        }
-        /* show3 */
-        #show3{
-            display: none;
-        }
-        #me3:checked~#show3{
-            display: block;
-        }
-        #faq3 div{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-        }
-        #show3{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-         margin-top: 10px;
-        }
-        /* show4 */
-        #show4{
-            display: none;
-        }
-        #me4:checked~#show4{
-            display: block;
-        }
-        #faq4 div{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-        }
-        #show4{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-         margin-top: 10px;
-        }
-        /* show5 */
-        #show5{
-            display: none;
-        }
-        #me5:checked~#show5{
-            display: block;
-        }
-        #faq5 div{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-        }
-        #show5{
-         background-color: #181840;
-         color: white;
-         font-size: 20px;
-         padding: 20px;
-         width: 800px;
-         margin-top: 10px;
-        }
-       
-        /* show end================ */
-    </style>
-    <!-- ============================================== -->
-    <link rel="stylesheet" href="project.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <!-- navbar -->
-    <ul id="navbar">
-        <li><a href="#"><img src="logo.png" alt="Image not found"></a></li>
-        <li><a href="#"> Home </a></li>
-        <li><a href="#"> About </a></li>
-        <li><a href="#"> Porfolio </a></li>
-        <li><a href="#"> News </a></li>
-        <li><a href="#"> Contact </a></li>
-        <li id="Download"><a href="logo.png" download> Download Image</a></li>
+<!-- navbar -->
+<div class="menu">
+  <div class="menubar">
+    <ul class="menu-links">
+      <li>
+        <a href="project_20221017_2331288-01.png"><img src="project_20221017_2331288-01.png" alt=""></a>
+      </li>
+      <li class="menulink">
+        <a href="home.html">मुख्य केंद्र</a>
+      </li>
+      <li class="menulink1 services">
+        <a href="#">अद्वितीय रचनाएं
+        </a>
+        <ul class="drop-down">
+          <li><a href="">गुलजार</a></li>
+          <li><a href="">गालिब</a></li>
+          <li><a href="">हास्य रस </a></li>
+          <li><a href="">वीर रस </a></li>
+          <li><a href="">कविता </a></li>
+        </ul>
+      </li>
+      <li class="menulink2 service1">
+        <a href="#">शायरों का शहर</a>
+        <ul class="drop-down1">
+          <li><a href="hari.html">हरिवंश राय बच्चन</a></li>
+          <li><a href="munshi.html"> मुंशी प्रेमचंद </a></li>
+          <li><a href="ramdhari.html"> रामधारी सिंह दिनकर  </a></li> 
+          <li><a href="surya.html"> सूर्य कान्त त्रिपाठी  </a></li>
+        </ul>
+      </li>
+      <li class="menulink3">
+        <a href="#">सुविचार</a>
+      </li>
+      <li class="menulink4">
+        <a href="login.html">लॉगिन / साइन उप </a>
+      </li>
     </ul>
-    <!-- end navbar -->
-    <!-- ====landing page==== -->
-    <section class="landing">
-        <!-- main section -->
-        <div class="introo">
-            <div class="intro">Hi i'm</div>
-            <div class="intro1">Madhur Choubey</div>
-            <div class="intro2">Web deveploper based in India</div><br><br><br>
-            <div class="intro3"><button style="border: 2px solid black;">Say Hello</button>
-                <a href="#">My Work</a></div><br><br><br><br><br>
-                
-            <i>I’m listen to your needs & thoughtfully interpret your requirements.“</i>
-        </div>
-        <div>
-            <img src="avatar.png" alt="Image Not Found">
-        </div>
-        <!-- main section -->
-    </section>
-    <section id="temp" >
-    <table id="client">
-        <a class="client1" href="#">______My client______</a>
-        
-    <tr id="image123">
-        <td><img src="2.png" alt=""></td>
-        <td><img src="3.png" alt=""></td>
-        <td><img src="4.png" alt=""></td>
-        <td><img src="5.png" alt=""></td>
-        <!-- <td><img src="6.png" alt=""></td> -->
-        <!-- <td><img src="7.png" alt=""></td> -->
-        <!-- <td><img src="8.png" alt=""></td> -->
-        <td><img src="1.png" alt=""></td>
-    </tr>
-</table>
-</section>
-<!--  client section -->
-<section class="Skill1">
-    <div class="div1">
-        <div style="display: flex;">
-            <div>
-                <img src="yves_guillou_idea.svg" alt="">
-            </div>
-            <div style="font-size: 30px;margin-top: 10px;">Dedication</div>
-        </div>
-        <p>Most common methods for <br> designing websites that work well <br> on desktop design</p>
-    </div>
-    <div class="div1">
-        <div style="display: flex;">
-            <div>
-                <img src="smart.png" alt="">
-            </div>
-            <div style="font-size: 30px;margin-top: 10px;">Smart Work</div>
-        </div>
-        <p>Most common methods for <br> designing websites that work well <br> on desktop design</p>
-    </div>
-    <div class="div1" style="border: none;">
-        <div style="display: flex;">
-            <div>
-                <img src="mind.png" alt="">
-            </div>
-            <div style="font-size: 30px;margin-top: 10px;">Inelligence</div>
-        </div>
-        <p>Most common methods for <br> designing websites that work well <br> on desktop design</p>
-    </div>
-
-</section>
-<!-- end of client section -->
-
-<section class="Certi">
-    <div class="certi1">
-        <div style="font-size: 20px;color: orangered;">_______My Skil_______</div>
-        <div style="font-size: 50px; color: #271a53;">Everyday <br> develop skill</div>
-        <div>While at Neverbland over the last few years,<br>
-        I've worked on web and product solutions for <br>
-        a range of startups, in a variety of industries. <br>
-        Work skills used</div>
-    </div>
-    <img class="dotted" src="https://itemsstore.net/html/trito/img/svg/elements.svg" alt="">
-        <div class="certi2">
-            <ul>
-                <li>HTML</li>
-                <li>PHP</li>
-                <li>firebase</li>
-            </ul>
-            <ul>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>JAVA</li>
-            </ul>
-            <ul>
-                <li>KOTLIN</li>
-                <li>Laravel</li>
-                <li>API</li>
-            </ul>
-        </div>
-    </div>
-</section>
-<!-- ============end================== -->
-<Section class="family">
-    <div>
-        <div style="font-size: 60px; color: black; text-decoration: underline; font-style: italic;">120+</div>
-        <div>Downloaded products</div>
-    </div>
-    <div>
-        <div style="font-size: 60px; color: black; text-decoration: underline; font-style: italic;">40k</div>
-        <div>Open source projects</div>
-    </div>
-    <div>
-        <div style="font-size: 60px; color: black; text-decoration: underline; font-style: italic;">100%</div>
-        <div>Satisfaction Guarantee</div>
-    </div>
-</Section>
-<!-- =================end================== -->
-
-<!--  ==========================about================ -->
-<div class="about5"><img src="https://itemsstore.net/html/trito/img/svg/elements.svg" alt=""></div>
-<div class="about6"><img src="https://itemsstore.net/html/trito/img/svg/elements.svg" alt=""></div>
-<div class="aboutfirst1">
-    <div class="first12">12+</div>
-    <div class="first13">Year of <br> esxperience</div>
+  </div>
 </div>
-<section class="about">
-    <div>
-        <aside style="width: 550px;" ><img src="avatar1.png" alt=""></aside>
-    </div>
-    <div class="about1">
-        <div class="about2" style="font-size: 25px;color: #7f2704;">_____About_____</div>
-        <div class="about3" style="font-size: 50px; color: #320e7b;">I can develop that <br> help people</div>
-        <div class="about4" style="font-size: 18px;color: hsl(260, 69%, 30%);">Dliquip ex ea commo do conse namber onequa ute irure dolor in <br> 
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br> 
-            pariatu epteur sint occaecat cupidatat <br><br>
-
-            Krnon proident, sunt in culpa qui officia deserunt mollit anim id <br>
-             est laborum. Sed ut perspiciatis unde omnis</div>
-             <div class="about8"><button>Hire me</button></div>
-    </div>
-</section>
-<!-- ============end of about section=================== -->
-<!-- ============portfolio=================== -->
-<section class="port">
- 
-    <div>
-        <img src="https://itemsstore.net/html/trito/img/portfolio/1.jpg" alt="">
-    </div>
-    <div>
-        <img src="https://itemsstore.net/html/trito/img/portfolio/2.jpg" alt="">
-    </div>
-
+<!-- end navbar -->
+<section class="landing">
+  <img style="width: 1520px; height: 500px;" src="background-6517956_640.webp" alt="">
+    <!-- main section -->
+    <div class="introo">
+        <div class="intro"> नमश्कर </div>
+        <div class="intro1"> आज की प्रमुख रचना </div><br><br>
+        <div class="intro2">असफलता एक चुनौती है, इसे स्वीकार करो,<br>
+          क्या कमी रह गई, देखो और सुधार करो।</div> <br><br>
+        <div class="intro3"><button style="border: 2px solid black;"><i class="fa-solid fa-heart fa-beat-fade"></i></button>
+        <i style="margin-left: 300px;" class="fa-solid fa-feather fa-shake"></i>
+        </div>
+    </section>
+    <!-- ===================end of the scetion================== -->
 
 </section>
-<section class="port1">
 
-    <div><img src="https://itemsstore.net/html/trito/img/portfolio/3.jpg" alt=""></div>
-    <div><img src="https://itemsstore.net/html/trito/img/portfolio/5.jpg" alt=""></div>
-    <div><img src="https://itemsstore.net/html/trito/img/portfolio/4.jpg" alt=""></div>
-    
+<!-- ======================sliderrrr=============== -->
 
-</section>
-<!-- ===========end of portfolio================= -->
+<section class="silde"><center>
+  <div class="picture">
+      <input type="radio" name="slide" id="img1">
+      <input type="radio" name="slide" id="img2">
+      <input type="radio" name="slide" id="img3">
+      <img src="hari ji.png" class="m1" alt="img1">
+      <img src="gulzaar.png" class="m2" alt="img2">
+      <img src="raam ji.png" class="m3" alt="img3">
+  </div>
+  <div class="dots">
+      <label for="img1"></label>
+      <label for="img2"></label>
+      <label for="img3"></label>
 
- <!-- =================================== faq============================================== -->
- <center>
- <div style="font-size: 22px; color: #ec3838; margin-top: 40px;">______FAQ________________</div>
- <div style="font-size: 50px; color: #1b1a79;margin-bottom: 20px;">Few questions client <br> normally ask me</div>
-</center>
- <section>
-    <label for="me1" id="faq1"><center>
-        <input type="checkbox" id="me1" style="display: none;">
-        <div>
-            <span style="margin-right: 350px;">What is your hourly rate?</span>
-            <span style="float: right;"> + </span>
-        </div>
-    </label>
-    
-    <div id="show">
-        We help our client suceed by creating identities, digital experiences, and printmaterials that communicate clearly, achieve <br>
-        marketing goals, and look fantastic.
-    </div>
-</center>
-</section> <br>
-<section>
-    <label for="me2" id="faq2"><center>
-        <input type="checkbox" id="me2" style="display: none;">
-        <div>
-            <span style="margin-right: 350px;">What type of projects do you take on?</span>
-            <span style="float: right;"> + </span>
-        </div>
-    </label>
-    
-    <div id="show2">
-        We help our client suceed by creating identities, digital experiences, and printmaterials that communicate clearly, achieve <br>
-         marketing goals, and look fantastic.
-    </div>
-</center>
-</section><br>
-<section>
-    <label for="me3" id="faq3"><center>
-        <input type="checkbox" id="me3" style="display: none;">
-        <div>
-            <span style="margin-right: 350px;">How do you charge for projects?</span>
-            <span style="float: right;"> + </span>
-        </div>
-    </label>
-    
-    <div id="show3">
-        We help our client suceed by creating identities, digital experiences, and printmaterials that communicate clearly, achieve <br>
-        marketing goals, and look fantastic.
-    </div>
-</center>
-</section><br>
-<section>
-    <label for="me4" id="faq4"><center>
-        <input type="checkbox" id="me4" style="display: none;">
-        <div>
-            <span style="margin-right: 350px;">What time-zone do you work in?</span>
-            <span style="float: right;"> + </span>
-        </div>
-    </label>
-    
-    <div id="show4">
-        We help our client suceed by creating identities, digital experiences, and printmaterials that communicate clearly, achieve <br>
-        marketing goals, and look fantastic.
-    </div>
-</center>
-</section><br>
-<section>
-    <label for="me5" id="faq5"><center>
-        <input type="checkbox" id="me5" style="display: none;">
-        <div>
-            <span style="margin-right: 350px;">How often can we communicate?</span>
-            <span style="float: right;"> + </span>
-        </div>
-    </label>
-    
-    <div id="show5">
-        We help our client suceed by creating identities, digital experiences, and printmaterials that communicate clearly, achieve <br>
-        marketing goals, and look fantastic.
-    </div>
+  </div>
 </center>
 </section>
-<div style="margin-bottom: 30px;"></div>
-<!-- =================================== faq============================================== -->
 
-<!-- ==================== -->
-
-<div class="free3"><img src="https://itemsstore.net/html/trito/img/svg/elements.svg" alt=""></div>
-<section class="freelancer"><center>
-    <div class="free2"><img src="https://itemsstore.net/html/trito/img/svg/elements.svg" alt=""></div>
-    <div style="font-size: 55px;">I'm available for <br> freelance work</div><br><br>
-    <div class="free1"><a href="#">Let's contact with me</a></div>
-</center>
-</section>
-<!-- ================================================================================ -->
-
-<section style="margin-left: 250px;"><br>
-    <div style="font-size: 25px;color: #951d1d;">______Blog___________</div><br>
-    <div style="font-size: 45px;color: #201978;">Check out my recent <br> blog posts</div><br><br>
-    </section>
-    
-    <section class="port4">
-    
-        <div><img src="https://itemsstore.net/html/trito/img/news/1.jpg" alt=""></div>
-        <div><img src="https://itemsstore.net/html/trito/img/news/2.jpg" alt=""></div>
-        <div><img src="https://itemsstore.net/html/trito/img/news/3.jpg" alt=""></div>
-        
-    
-    </section>
-    <section class="port3">
-        <div><a style="text-decoration: none;" href="#">Jim Morisson Says when the <br> musics over turn off the light</a></div>
-        <div><a style="text-decoration: none;" href="#">How to be appreciated for your <br> hard work as a developer</a></div>
-        <div><a style="text-decoration: none;" href="#">How designers and developers <br> can collaborate better</a></div>
-    </section>
-    <section class="port5">
-        <div>
-        <div style="margin-right: 250px;">June 27, 2023</div>
-        <div style="margin-right: 250px;">June 25, 2023</div>
-        <div style="margin-right: 200px;">June 20, 2023</div>
-        </div>
-    </section>
-
-
-
-    <!-- ==========review================ -->
-    <section class="review1">
-        <div style="padding-top: 35px;">
-        <div style="font-size: 25px; color: #ec3838;">____Contact__________</div><br><br>  
-        <div style="font-size: 50px; color: #edefff;">Drop me a line</div> <br><br>
-        <div style="font-size: 18px; color: #838080;">Call:</div>
-        <div style="font-size: 25px; color: #fbfafa;">+91 82690 09962</div><br>
-        <div style="font-size: 18px; color: #838080;">Email:</div>
-        <div style="font-size: 25px; color: #fbfafa;">mdhrchoubey@gmail.com</div>
-        <div>
-            <div class="review5">
-                <img src="https://itemsstore.net/html/trito/img/logo/light.png" alt="">
-                <div style="font-size: 25px; color: white;">© 2023 Trito. All Rights Reserved</div>
-            </div>
-        </div>
-    </div>
-        <section class="Review">
-            
-            <center>
-        <form>
-            
-            <input type="text" placeholder="Name" required><br><br>
-    
-            <input type="email" placeholder="Email" required><br><br>
-            <input type="text" placeholder="Message" style="height: 80px;"><br><br>
-    
-            <input type="submit"><br><br>
-    
-            <a href="#"><img src="https://freesvg.org/storage/img/thumb/new-instagram-logo-glyph.png" alt=""></a>
-        
-        </form>
-    </center>
-    </section>
-    </section>
-    <!-- ==========end of review================ -->
 </body>
 </html>
